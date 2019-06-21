@@ -1,0 +1,1 @@
+Build upon the picture taking app and send that image to a GCP function that reads the text from image and gives back a response that is printed to a .txt file
