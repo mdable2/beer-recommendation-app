@@ -25,6 +25,9 @@ wheels/
 *.egg
 MANIFEST
 
+# Config files
+*config.json
+
 # Data and image files
 *.csv
 
