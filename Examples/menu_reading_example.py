@@ -1,3 +1,9 @@
+'''
+TODO: 
+1. How to get the lines/blocks of text only and not the single words at the end of output file?
+2. Figure out how to remove output.seek(0) so that you do it all in one code block or close and reopen file from beginning?
+'''
+
 import json
 import os
 import io
@@ -13,7 +19,6 @@ google_creds = service_account.Credentials.from_service_account_file(google_cred
 
 with open(config_path) as json_data_file:
     config_data = json.load(json_data_file)
-
 
 ''' Set up connection to Google Vision API '''
 # Instantiates a client
@@ -54,15 +59,27 @@ image = types.Image(content=content)
 response = client.text_detection(image=image)
 texts = response.text_annotations
 
-print('Texts:')
+output = open("output.txt", "a+")
 
 for text in texts:
-    print('\n"{}"'.format(text.description))
+    output.write(str('{}'.format(text.description)))
 
-    vertices = (['({},{})'.format(vertex.x, vertex.y)
-                for vertex in text.bounding_poly.vertices])
+output.seek(0)
+lineList = [line.rstrip('\n') for line in output]
+print(lineList)
 
-    print('bounds: {}'.format(','.join(vertices)))
+output.close()
+
+
+# print('Texts:')
+
+# for text in texts:
+#     print('\n"{}"'.format(text.description))
+
+#     vertices = (['({},{})'.format(vertex.x, vertex.y)
+#                 for vertex in text.bounding_poly.vertices])
+
+#     print('bounds: {}'.format(','.join(vertices)))
 
 # Set up connection to GCP Datastore
 
