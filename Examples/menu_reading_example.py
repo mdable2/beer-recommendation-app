@@ -65,8 +65,8 @@ for text in texts:
     output.write(str('{}'.format(text.description)))
 
 output.seek(0)
-lineList = [line.rstrip('\n') for line in output]
-print(lineList)
+output_list = [line.rstrip('\n') for line in output]
+print(output_list)
 
 output.close()
 
