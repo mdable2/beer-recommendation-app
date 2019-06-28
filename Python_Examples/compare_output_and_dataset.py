@@ -48,9 +48,9 @@ for beer in output:
     if beer in beer_list:
         name_matches.append(beer)
 
-mock_beer_search = open("mock_beer_search.txt", "a+")
-mock_beer_info = open("mock_beer_info.txt", "a+")
-beer_stats = open("beers_stats.txt", "a+")
+mock_beer_search = open("mock_beer_search.txt", "a+", encoding="utf8")
+mock_beer_info = open("mock_beer_info.txt", "a+", encoding="utf8")
+beer_stats = open("beers_stats.txt", "a+", encoding="utf8")
 
 for beer in name_matches:
     try:
@@ -59,7 +59,7 @@ for beer in name_matches:
         data = r.json()
 
         # Write to mock beer search
-        mock_beer_search.write(data + "\n")
+        mock_beer_search.write(str(data) + "\n")
 
         beer_id = data["response"]["beers"]["items"][1]["beer"]["bid"]
         beer_info_url = f"https://api.untappd.com/v4/beer/info/{beer_id}"
@@ -67,7 +67,7 @@ for beer in name_matches:
         info = r.json()
 
         # Write to mock beer info
-        mock_beer_info.write(info + "\n")
+        mock_beer_info.write(str(info) + "\n")
 
         beer_info = info["response"]["beer"]
         info_string = beer_info["beer_name"] + " is a " + str(beer_info["beer_style"]) + " beer. It has " + str(beer_info["rating_count"]) + " ratings and a score of " + str(beer_info["rating_score"]) + "."
