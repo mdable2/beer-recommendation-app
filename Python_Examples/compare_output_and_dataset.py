@@ -3,7 +3,7 @@ TODO:
 - Mock API reponse so you can continue testing --> reached API limit
 - Print out the exact matches and stats for each match: {name}, {type}, {number of ratings}, {rating}
 - BUG: searching "Budweiser" yields "Bud Light" as first result and "Budweiser" second.
-       figure out a way to search for exact matc
+       figure out a way to search for exact match
 
 - Make a simple search that allows user to enter in which type of beer they want and you are returned the top rated beer for that type.
 '''
@@ -33,7 +33,7 @@ beer_info_params = {
 }
 
 output_file_csv = "./output.txt"
-beer_data_set_csv = os.path.join("..", "Resources", "Data", "beers_joined.csv")
+beer_data_set_csv = os.path.join("..", "Resources", "Data", "Data_Sets", "beers_joined.csv")
 
 name_matches = []
 beer_list = []
@@ -48,6 +48,8 @@ for beer in output:
     if beer in beer_list:
         name_matches.append(beer)
 
+mock_beer_search = open("mock_beer_search.txt", "a+")
+mock_beer_info = open("mock_beer_info.txt", "a+")
 beer_stats = open("beers_stats.txt", "a+")
 
 for beer in name_matches:
@@ -55,15 +57,24 @@ for beer in name_matches:
         beer_search_params["q"] = beer
         r = requests.get(url = untappd_url_beer_search, params = beer_search_params)
         data = r.json()
-        print(data)
+
+        # Write to mock beer search
+        mock_beer_search.write(data + "\n")
+
         beer_id = data["response"]["beers"]["items"][1]["beer"]["bid"]
         beer_info_url = f"https://api.untappd.com/v4/beer/info/{beer_id}"
         r = requests.get(url = beer_info_url, params = beer_info_params)
         info = r.json()
+
+        # Write to mock beer info
+        mock_beer_info.write(info + "\n")
+
         beer_info = info["response"]["beer"]
         info_string = beer_info["beer_name"] + " is a " + str(beer_info["beer_style"]) + " beer. It has " + str(beer_info["rating_count"]) + " ratings and a score of " + str(beer_info["rating_score"]) + "."
         beer_stats.write(info_string + "\n")
     except Exception as e:
         print(e)
 
+mock_beer_search.close()
+mock_beer_info.close()
 beer_stats.close()
