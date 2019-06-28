@@ -1,8 +1,9 @@
 '''
 TODO:
+- Mock API reponse so you can continue testing --> reached API limit
 - Print out the exact matches and stats for each match: {name}, {type}, {number of ratings}, {rating}
 - BUG: searching "Budweiser" yields "Bud Light" as first result and "Budweiser" second.
-       figure out a way to search for exact match
+       figure out a way to search for exact matc
 
 - Make a simple search that allows user to enter in which type of beer they want and you are returned the top rated beer for that type.
 '''
