@@ -8,4 +8,4 @@ Take a picture of the beer menu at a restaurant and get back the top choice base
 3. [Simple OCR Example Code](https://cloud.google.com/vision/docs/ocr)
 4. [Setting Up Flutter](https://flutter.dev/docs/get-started/install/windows)
 5. ["Hello World" Flutter](https://flutter.dev/docs/get-started/test-drive?tab=vscode)
-6. [Deploy Flutter App to iOS without a Mac - using Travis CI](https://medium.com/flutter-community/developing-and-debugging-flutter-apps-for-ios-without-a-mac-8d362a8ec667)
+6. [Deploy Flutter App to iOS without a Mac - using Codemagic](https://medium.com/flutter-community/developing-and-debugging-flutter-apps-for-ios-without-a-mac-8d362a8ec667)
