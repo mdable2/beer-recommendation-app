@@ -9,3 +9,4 @@ Take a picture of the beer menu at a restaurant and get back the top choice base
 4. [Setting Up Flutter](https://flutter.dev/docs/get-started/install/windows)
 5. ["Hello World" Flutter](https://flutter.dev/docs/get-started/test-drive?tab=vscode)
 6. [Deploy Flutter App to iOS without a Mac - using Codemagic](https://medium.com/flutter-community/developing-and-debugging-flutter-apps-for-ios-without-a-mac-8d362a8ec667)
+7. [Cydia Impactor - Install IPA files on iOS and APK files on Android](http://www.cydiaimpactor.com/)
