@@ -17,3 +17,5 @@ Take a picture of the beer menu at a restaurant and get back the top choice base
 7. [Cydia Impactor - Install IPA files on iOS and APK files on Android](http://www.cydiaimpactor.com/)
 8. [Basic Cross Platform UI Design With Flutter](https://codelabs.developers.google.com/codelabs/flutter/#0) 
 9. [Great Example of Adding Camera Functionality to App](https://blog.brainsandbeards.com/how-to-add-camera-support-to-a-flutter-app-c1dfd6b78823?gi=cd11558eecc5) 
+10. [Google Cloud Functions in Flutter App](https://medium.com/@jackwong_60367/cloud-function-flutter-128b8c3695b4) 
+11. [Full Pipeline for OCR Google Cloud Function](https://cloud.google.com/functions/docs/tutorials/ocr#functions_ocr_process-python) 
