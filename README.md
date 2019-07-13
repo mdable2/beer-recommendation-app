@@ -16,3 +16,4 @@ Take a picture of the beer menu at a restaurant and get back the top choice base
 6. [Deploy Flutter App to iOS without a Mac - using Codemagic](https://medium.com/flutter-community/developing-and-debugging-flutter-apps-for-ios-without-a-mac-8d362a8ec667)
 7. [Cydia Impactor - Install IPA files on iOS and APK files on Android](http://www.cydiaimpactor.com/)
 8. [Basic Cross Platform UI Design With Flutter](https://codelabs.developers.google.com/codelabs/flutter/#0) 
+9. [Great Example of Adding Camera Functionality to App](https://blog.brainsandbeards.com/how-to-add-camera-support-to-a-flutter-app-c1dfd6b78823?gi=cd11558eecc5) 
