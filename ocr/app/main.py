@@ -4,17 +4,17 @@ import os
 
 from google.cloud import storage
 from google.cloud import vision
-# from google.oauth2 import service_account
+from google.cloud import pubsub_v1
 
 vision_client = vision.ImageAnnotatorClient()
 storage_client = storage.Client()
+publisher = pubsub_v1.PublisherClient()
+
+project_id = os.environ['GCP_PROJECT']
 
 with open("config.json") as f:
     data = f.read()
 config = json.loads(data)
-
-# google_creds_path = os.path.join("c:/", "Users", "mdabler", "OneDrive - Rightpoint", "Desktop", "beer-recommendation-app-3764c8dfdd8e.json")
-# google_creds = service_account.Credentials.from_service_account_file(google_creds_path)
 
 def process_image(file, context):
     """Cloud Function triggered by Cloud Storage when a file is changed.
@@ -44,6 +44,15 @@ def detect_text(bucket, filename):
     else:
         text = ''
     print('Extracted text {} from image ({} chars).'.format(text, len(text)))
+
+    topic_name = config['RESULT_TOPIC']
+    message = {
+        'text': text
+    }
+    message_data = json.dumps(message).encode('utf-8')
+    topic_path = publisher.topic_path(project_id, topic_name)
+    future = publisher.publish(topic_path, data=message_data)
+    future.result()
 
 def save_result(event, context):
     if event.get('data'):
