@@ -1,6 +1,11 @@
 # Beer-Recommendation-App
 Take a picture of the beer menu at a restaurant and get back the top choice based on your preferences!
 
+### Running The App
+* In VS Code, in the command palette choose "Attach to Flutter Process on Device"
+* Choose emulator
+* Once emulator is launched, run flutter app by typing "flutter run" in terminal
+
 ### How To's
 
 1. [Setting Up Virtual Environment For Python](https://cloud.google.com/python/setup)
