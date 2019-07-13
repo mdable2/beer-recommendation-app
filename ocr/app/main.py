@@ -4,7 +4,7 @@ import os
 
 from google.cloud import storage
 from google.cloud import vision
-from google.oauth2 import service_account
+# from google.oauth2 import service_account
 
 vision_client = vision.ImageAnnotatorClient()
 storage_client = storage.Client()
@@ -13,8 +13,8 @@ with open("config.json") as f:
     data = f.read()
 config = json.loads(data)
 
-google_creds_path = os.path.join("c:/", "Users", "mdabler", "OneDrive - Rightpoint", "Desktop", "beer-recommendation-app-3764c8dfdd8e.json")
-google_creds = service_account.Credentials.from_service_account_file(google_creds_path)
+# google_creds_path = os.path.join("c:/", "Users", "mdabler", "OneDrive - Rightpoint", "Desktop", "beer-recommendation-app-3764c8dfdd8e.json")
+# google_creds = service_account.Credentials.from_service_account_file(google_creds_path)
 
 def process_image(file, context):
     """Cloud Function triggered by Cloud Storage when a file is changed.
