@@ -1,6 +1,10 @@
 # Beer-Recommendation-App
 Take a picture of the beer menu at a restaurant and get back the top choice based on your preferences!
 
+### Installations Needed
+* Flutter
+* TODO
+
 ### Running The App
 * In VS Code, in the command palette choose "Attach to Flutter Process on Device"
 * Choose emulator
