@@ -12,7 +12,7 @@ Take a picture of the beer menu at a restaurant and get back the top choice base
 
 ### Helpful gcloud commands
 `gcloud functions logs read --limit 150`  
-`gsutil cp beer_menu_1.png gs://beer-recommendation-image-store` *assuming you are in images directory this uploads image to image store bucket*  
+`gsutil cp beer_menu_1.png gs://beer-recommendation-image-store` (*assuming you are in images directory this uploads image to image store bucket*)  
 `gcloud functions deploy ocr-save --runtime python37 --trigger-topic result-topic-name --entry-point save_result`  
 `gcloud functions deploy ocr-extract --runtime python37 --trigger-bucket beer-recommendation-image-store --entry-point process_image`  
 
