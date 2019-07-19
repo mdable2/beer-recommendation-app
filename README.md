@@ -2,8 +2,13 @@
 Take a picture of the beer menu at a restaurant and get back the top choice based on your preferences!
 
 ### Installations Needed
-* Flutter
-* TODO
+* [Python](https://www.python.org/downloads/)
+* [GCP SDK and CLI](https://cloud.google.com/sdk/)
+* [Flutter](https://flutter.dev/docs/get-started/install/windows)
+* [Android Studio](https://developer.android.com/studio)
+* [Cydia Impact](http://www.cydiaimpactor.com/)
+* [iTunes](https://www.apple.com/itunes/download/?source=post_page---------------------------)
+* [libimobiledevice](https://dev.azure.com/libimobiledevice-win32/imobiledevice-net/_build?definitionId=4&source=post_page---------------------------) and [ideviceinstaller](https://dev.azure.com/libimobiledevice-win32/imobiledevice-net/_build?definitionId=7&source=post_page---------------------------)
 
 ### Running The App
 * In VS Code, in the command palette choose "Attach to Flutter Process on Device"
