@@ -36,3 +36,5 @@ Take a picture of the beer menu at a restaurant and get back the top choice base
 10. [Google Cloud Functions in Flutter App](https://medium.com/@jackwong_60367/cloud-function-flutter-128b8c3695b4) 
 11. [Full Pipeline for OCR Google Cloud Function](https://cloud.google.com/functions/docs/tutorials/ocr#functions_ocr_process-python) 
 12. [GCP Python Examples](https://github.com/GoogleCloudPlatform/python-docs-samples) 
+13. [Deploy GCP Cloud Functions From Source Control](https://cloud.google.com/functions/docs/deploying/repo) 
+14. [CI/CD With GCP Cloud Functions](https://cloud.google.com/functions/docs/bestpractices/testing) 
