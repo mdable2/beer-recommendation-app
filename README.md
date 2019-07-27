@@ -9,6 +9,7 @@ Take a picture of the beer menu at a restaurant and get back the top choice base
 * [Cydia Impact](http://www.cydiaimpactor.com/)
 * [iTunes](https://www.apple.com/itunes/download/?source=post_page---------------------------)
 * [libimobiledevice](https://dev.azure.com/libimobiledevice-win32/imobiledevice-net/_build?definitionId=4&source=post_page---------------------------) and [ideviceinstaller](https://dev.azure.com/libimobiledevice-win32/imobiledevice-net/_build?definitionId=7&source=post_page---------------------------)
+* [which binary](https://sourceforge.net/projects/gnuwin32/files/which/2.20/which-2.20-bin.zip/download?use_mirror=gigenet&source=post_page---------------------------)
 
 ### Running The App
 * In VS Code, in the command palette choose "Attach to Flutter Process on Device"
