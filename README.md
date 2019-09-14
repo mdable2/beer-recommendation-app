@@ -48,4 +48,5 @@ Take a picture of the beer menu at a restaurant and get back the top choice base
 22. [Extend Firebase Storage With Cloud Functions](https://firebase.google.com/docs/storage/extend-with-functions?authuser=0) 
 23. [FlutterFire - Packages to Interface With Firebase Within Flutter](https://firebaseopensource.com/projects/flutter/plugins/) 
 24. [Documentation on Hooking Up Cloud Function With Firebase Storage Trigger](https://medium.com/flutterpub/firebase-cloud-storage-and-flutter-fa2e91663b95) 
-25. [Cloud Storage Triggers](https://firebase.google.com/docs/functions/gcp-storage-events?authuser=0) 
+25. [Cloud Storage Triggers](https://firebase.google.com/docs/functions/gcp-storage-events?authuser=0)  
+26. [Debugging with 3uTools - Debug on Windows for iOS app real time](http://www.3u.com/)
