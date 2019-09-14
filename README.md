@@ -22,6 +22,10 @@ Take a picture of the beer menu at a restaurant and get back the top choice base
 `gcloud functions deploy ocr-save --runtime python37 --trigger-topic result-topic-name --entry-point save_result`  
 `gcloud functions deploy ocr-extract --runtime python37 --trigger-bucket beer-recommendation-image-store --entry-point process_image`  
 
+### Helpful Notes
+* iOS non app-store certificates:
+Apps signed with Free developer accounts expire after one week, so every week you have to rebuild and resign your app. This issue will go away when you get a paid account, which will allow you to run your non-App Store app for up to a year.
+
 ### How To's
 
 1. [Setting Up Virtual Environment For Python](https://cloud.google.com/python/setup)
