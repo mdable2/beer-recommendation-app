@@ -55,3 +55,4 @@ Apps signed with Free developer accounts expire after one week, so every week yo
 25. [Cloud Storage Triggers](https://firebase.google.com/docs/functions/gcp-storage-events?authuser=0)  
 26. [Debugging with 3uTools - Debug on Windows for iOS app real time](http://www.3u.com/)  
 27. [Dart Cheatsheet - Made by Google](https://dart.dev/codelabs/dart-cheatsheet)  
+28. [BLoC Pattern](https://medium.com/flutterpub/when-firebase-meets-bloc-pattern-fb5c405597e0)  
